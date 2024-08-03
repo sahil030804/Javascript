@@ -15,4 +15,18 @@ console.log(city);
 
 //object
 
-console.log(typeof true);
+// console.log(typeof true);
+
+let bigInt=9573495934959595959593499439n
+
+let fruits = ["apple","orange","banana"]
+// console.log(fruits[1]);
+
+let myObj={
+    name : "sahil",
+    age : 20
+}
+
+console.log(myObj.name);
+
+
