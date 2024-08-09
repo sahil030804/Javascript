@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 2</title>
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.806);
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    const div = document.createElement("h1");
+    console.log(div);
+    div.className = "main";
+    div.id = a = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "new Title");
+    const Color = ["red", "blue", "cyan"];
+
+    for (let val = 0; val < Color.length; val++) {
+      const element = Color[val];
+      console.log(element);
+
+      div.style.backgroundColor = element;
+    }
+
+    div.style.padding = "20px";
+    // div.innerText = "hello world";
+    const textNode = document.createTextNode("hello world");
+    div.appendChild(textNode);
+
+    document.body.appendChild(div);
+  </script>
+</html>

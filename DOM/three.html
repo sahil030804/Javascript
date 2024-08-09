@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+  </body>
+
+  <script>
+    // const languageArr = ["python", "php", "sql"];
+
+    function language(langname) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langname}`;
+      document.querySelector(".language").appendChild(li);
+    }
+
+    language("python");
+
+    function AddOptiLang(langname) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langname));
+      document.querySelector(".language").appendChild(li);
+    }
+
+    AddOptiLang("jabong");
+
+    //edit
+
+    const thirdlang = document.querySelector("li:nth-child(3)");
+    // console.log(thirdlang);
+
+    const newLi = document.createElement("li");
+    newLi.textContent = "Hulala";
+    thirdlang.replaceWith(newLi);
+
+    //edit
+
+    const firstlang = document.querySelector("li:first-child");
+    // console.log(firstlang);
+    firstlang.outerHTML = "<li>hello</li>";
+
+    //remove
+
+    const lastlang = document.querySelector("li:last-child");
+    lastlang.remove();
+  </script>
+</html>
