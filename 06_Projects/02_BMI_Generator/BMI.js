@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
   const height = parseInt(document.querySelector("#height").value);
   // console.log(height);
   const weight = parseInt(document.querySelector("#weight").value);
-  //   console.log(weight);
+    // console.log(weight);
 
   const result = document.querySelector("#results");
   const message = document.querySelector("#message");
