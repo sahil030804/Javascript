@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+
+    <style>
+      body {
+        background-color: #414141;
+        color: aliceblue;
+      }
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: rgb(92, 113, 113);
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+      }
+
+      a {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box" id="one">One</div>
+      <div class="box" id="Two">Two</div>
+      <div class="box" id="Three">Three</div>
+      <div class="box" id="Four">Four</div>
+      <div class="box" id="Five">Five</div>
+
+      <a id="link" href="http://google.com">Google</a>
+    </div>
+  </body>
+
+  <script>
+    // let one = document.querySelector("#one");
+
+    // document.querySelector(".boxes").addEventListener("click", function (e) {
+    //   console.log("all boxes clicked");
+    // });
+    document.querySelector("#link").addEventListener("click", function (e) {
+      e.preventDefault();
+      // console.log("jkvnvisdvsdksd ck k");
+    });
+
+    let boxes = document.querySelector(".boxes");
+    boxes.addEventListener("click", function (e) {
+      //   console.log("three is clicked")
+      console.log(e.target.tagName);
+
+      if (e.target.tagName === "DIV") {
+        let remove = e.target;
+        remove.remove();
+        // console.log(e.target.tagName);
+      }
+
+      //   e.stopPropagation();
+    });
+  </script>
+</html>
