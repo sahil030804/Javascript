@@ -1,0 +1,23 @@
+body {
+  display: block;
+}
+
+.container {
+  width: 600px;
+  height: 700px;
+  background-color: rgb(183, 183, 183);
+  padding: 40px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+form #results {
+  font-size: larger;
+  font-weight: 500;
+  color: white;
+  margin: 10px;
+}

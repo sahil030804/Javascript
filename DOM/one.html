@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <style>
+      .dg-black {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="dg-black">
+    <div>
+      <h1 id="title" class="heading">
+        Hello World <span style="display: none">okay</span>
+      </h1>
+      <p>this is new practice website</p>
+      <p id="new-p"></p>
+      <input type="password" name="pswd" id="dddd" />
+      <ol>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">three</li>
+        <li class="list">four</li>
+        <li class="list">five</li>
+      </ol>
+    </div>
+
+    <div class="parent">
+      <div class="day">monday</div>
+      <div class="day">tuesday</div>
+      <div class="day">wednesday</div>
+      <div class="day">thursday</div>
+      <div class="day">friday</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // let a = 10;
+
+  // if (a >= 10) {
+  //   document.getElementById("new-p").innerHTML = "a is bigger";
+  // } else {
+  //   document.getElementById("new-p").innerHTML = "a is BBBBBBBBBBBBBB";
+  // }
+
+  let parent = document.querySelector(".parent");
+
+  // console.log(parent);
+  // console.log(parent.children);
+  // console.log(parent.children[1].innerHTML);
+
+  for (let i = 0; i < parent.children.length; i++) {
+    const element = parent.children[i];
+    // console.log(element);
+  }
+
+  parent.children[1].style.color = "red";
+  console.log(parent.firstElementChild.innerHTML);
+  console.log(parent.lastElementChild.innerHTML);
+
+  const dayOne = document.querySelector(".day");
+  console.log(dayOne.parentElement);
+
+  // let children = parent.children;
+  // console.log(children);
+  // console.log(children);
+
+  // let ChildArr = Array.from(children);
+  // console.log(ChildArr);
+
+  // ChildArr.forEach((item) => {
+  //   return console.log(item);
+  // });
+</script>
